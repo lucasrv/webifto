@@ -1,7 +1,11 @@
 <%= simple_form_for @pessoa, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.input :nome %>
-  <%= f.input :funcao %>
-  <%= f.association :departamento, :label_method => :nome , :value_method => :id%>
+
+  <%=  f.input :nome, :wrapper => :prepend, :label => false do %>
+  <%=    content_tag :span, "Name", :class => "add-on" %>
+  <%=   f.input_field :nome %>
+  <% end %>
+  <%= f.input :funcao, %>
+  <%= f.association :departamento, :label_method => :nome , :value_method => :id, :prompt => 'Selecione um departamento' %>
   <%= f.input :email %>
   <%= f.input :telefone %>
   <div class="form-actions">

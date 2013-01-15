@@ -33,7 +33,11 @@ gem 'ruby-debug-ide'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-  gem 'bootstrap-sass'
+  gem 'therubyracer'
+  gem 'less-rails'
+  gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+#  gem 'bootstrap-sass'
+
   #gem 'less-rails-bootstrap'
 
 

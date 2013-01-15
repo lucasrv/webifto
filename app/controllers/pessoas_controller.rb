@@ -1,6 +1,7 @@
 class PessoasController < ApplicationController
   # GET /pessoas
   # GET /pessoas.json
+  I18n.locale = :"pt-BR"
   def index
     @pessoas = Pessoa.all
     #@departamento=Departamento.find(Pessoa.departamento_id)
